@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicio Técnico de PC y Redes en Argentina</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Supercompumundo</span> Hypermegared</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current nav-inicio"><a href="index.html">Inicio</a></li>
+                    <li class="nav-servicios"><a href="servicios.html">Servicios</a></li>
+                    <li class="nav-nosotros"><a href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-contacto"><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>Expertos en Tecnología y Conectividad</h1>
+            <p>Ofrecemos soluciones integrales para tus equipos y redes. Servicio técnico en Buenos Aires, Argentina.</p>
+        </div>
+    </section>
+
+    <main id="main" class="container">
+        <section id="welcome">
+            <h2>Bienvenidos a Supercompumundo Hypermegared</h2>
+            <p>Tu socio confiable para todas tus necesidades tecnológicas. Ofrecemos un servicio personalizado para asegurar que tus equipos y redes funcionen a la perfección. Explora nuestros servicios y no dudes en contactarnos.</p>
+            
+            <div class="carousel-container">
+                <div class="carousel-slide fade">
+                    <img src="Multimedia/3-large_default.jpg">
+                </div>
+                <div class="carousel-slide fade">
+                    <img src="Multimedia/Armado-De-Pc-gaming1.jpg">
+                </div>
+                <div class="carousel-slide fade">
+                    <img src="Multimedia/PC-Gamer-scaled.webp">
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Supercompumundo Hypermegared &copy; 2025</p>
+    </footer>
+</body>
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("carousel-slide");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+        setTimeout(showSlides, 2000); // Cambia la imagen cada 2 segundos
+    }
+</script>
+</html>
